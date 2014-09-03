@@ -1,0 +1,23 @@
+{
+  "name": "Joker",
+  "version": "0.0.0",
+  "description": "My site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joker666/Joker666.github.io.git"
+  },
+  "author": "Hasan Rafi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Joker666/Joker666.github.io/issues"
+  },
+  "homepage": "https://github.com/Joker666/Joker666.github.io",
+  "dependencies": {
+    "gulp": "^3.8.7",
+    "gulp-ruby-sass": "^0.7.1"
+  }
+}

@@ -1,1 +1,32 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joker666</title>
+
+    <!--  Links -->
+
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/importer.css"/>
+
+    <!--
+        Scripts
+                -->
+
+    <!-- Vendor Scripts -->
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/ui-router/release/angular-ui-router.js"></script>
+
+
+    <!-- Custom Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/services/routes.js"></script>
+
+
+
+</head>
+<body ng-app="blogApp">
+<div ui-view></div>
+</body>
+</html>

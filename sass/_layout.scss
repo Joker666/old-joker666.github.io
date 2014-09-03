@@ -1,0 +1,11 @@
+$susy:(
+    columns: 24,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+);
+
+body{
+  @include container(100%);
+}

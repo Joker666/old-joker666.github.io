@@ -1,0 +1,12 @@
+{
+  "name": "Joker",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Joker666/Joker666.github.io",
+  "authors": [
+    "Hasan Rafi <mr.k779@outlook.com>"
+  ],
+  "description": "My Blog Site",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true
+}

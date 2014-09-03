@@ -2,10 +2,11 @@
     <!-- Nav -->
     <nav id="nav">
 
-        <div ui-sref-active="active"><a ui-sref="nav.home" class="icon fa fa-home fa-3x"><span>Home</span></a></div>
-        <div ui-sref-active="active"><a ui-sref="state1" class="icon fa fa-folder fa-3x"><span>Work</span></a></div>
-        <div ui-sref-active="active"><a ui-sref="state1" class="icon fa fa-envelope fa-3x"><span>Contact</span></a></div>
-        <div ui-sref-active="active"><a ui-sref="state1" class="icon fa fa-twitter fa-3x"><span>Twitter</span></a></div>
+        <a ui-sref="nav.home" ng-class="{active: $state.includes('nav.home')}" class="icon fa fa-home fa-3x"><span>Home</span></a>
+        <a class="icon fa fa-gavel fa-3x"><span>Work</span></a>
+        <a class="icon fa fa-envelope fa-3x"><span>Contact</span></a>
+        <a ui-sref="nav.blogList" ng-class="{active: $state.includes('nav.blogList')}" class="icon fa fa-pencil-square-o fa-3x"><span>Blog</span></a>
+        <a class="icon fa fa-twitter fa-3x"><span>Twitter</span></a>
     </nav>
     <div ui-view></div>
 </div>

@@ -7,5 +7,11 @@ $susy:(
 );
 
 body{
-  @include container(100%);
+    @include container(100%);
+}
+
+.wrapper{
+    margin-top: 5%;
+    @include span(isolate 20 at 3 of 24);
+    //border: 1px blue solid;
 }

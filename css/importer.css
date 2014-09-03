@@ -1,9 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300);
+* {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.1rem; }
+
 html {
   background: url(../images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+a {
+  text-decoration: none; }
 
 body {
   max-width: 100%;
@@ -13,5 +21,116 @@ body {
     content: " ";
     display: block;
     clear: both; }
+
+.wrapper {
+  margin-top: 5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  margin-left: 8.33333%;
+  margin-right: -100%;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%; }
+
+.icon {
+  color: white; }
+
+#nav {
+  text-align: center;
+  height: 4.25em;
+  cursor: default; }
+  #nav div {
+    display: inline-block; }
+    #nav div a {
+      margin: 0 0.5em 0 0.5em;
+      font-size: 2.5em;
+      opacity: 0.35;
+      outline: 0;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      -ms-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out; }
+      #nav div a:hover {
+        opacity: 1.0; }
+        #nav div a:hover span {
+          opacity: 1; }
+      #nav div a span {
+        display: block;
+        position: absolute;
+        top: 1.5em;
+        margin-left: -1.3em;
+        font-size: 0.3em;
+        height: 2.25em;
+        line-height: 2.25em;
+        width: 5.5em;
+        background: #000000;
+        color: wheat;
+        opacity: 0;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+        -o-transition: opacity .25s ease-in-out;
+        -ms-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out; }
+        #nav div a span:after {
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: transparent;
+          border-top-color: #000000;
+          border-width: 10px;
+          margin-left: -10px; }
+
+#home {
+  margin-top: 2%;
+  background: white;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%; }
+  #home:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.front-info {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 62.5%;
+  float: left;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%; }
+  .front-info section {
+    margin-left: 8.33333%;
+    margin-top: 20%; }
+    .front-info section h1 {
+      opacity: 0.8;
+      margin-bottom: -2%; }
+    .front-info section h2 {
+      opacity: 0.7;
+      font-size: 1.2em;
+      font-weight: 200; }
+
+.my-image {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 37.5%;
+  float: left;
+  padding-left: 0.41667%;
+  padding-right: 0.41667%;
+  overflow: hidden;
+  height: 55%;
+  margin-bottom: -7px; }
+  .my-image img {
+    height: inherit; }
 
 /*# sourceMappingURL=importer.css.map */

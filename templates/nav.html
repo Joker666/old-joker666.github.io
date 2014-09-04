@@ -3,10 +3,14 @@
     <nav id="nav">
 
         <a ui-sref="nav.home" ng-class="{active: $state.includes('nav.home')}" class="icon fa fa-home fa-3x"><span>Home</span></a>
-        <a class="icon fa fa-gavel fa-3x"><span>Work</span></a>
-        <a class="icon fa fa-envelope fa-3x"><span>Contact</span></a>
+        <a ui-sref="nav.work" ng-class="{active: $state.includes('nav.work')}" class="icon fa fa-code fa-3x"><span>Work</span></a>
         <a ui-sref="nav.blogList" ng-class="{active: $state.includes('nav.blogList')}" class="icon fa fa-pencil-square-o fa-3x"><span>Blog</span></a>
-        <a class="icon fa fa-twitter fa-3x"><span>Twitter</span></a>
+        <a class="icon fa fa-envelope fa-3x"><span>Contact</span></a>
     </nav>
-    <div ui-view></div>
+    <div ui-view class="nga-fast nga-stagger-fast nga-rotate-up"></div>
+    <footer>
+        <a id='twitter' _blank" href="https://twitter.com/hasantalks" class="icon fa fa-twitter fa-2x"></a>
+        <a id='plus' target="_blank" href="https://plus.google.com/+HasanRafi" class="icon fa fa-google-plus fa-2x"></a>
+        <a id='github' target="_blank" href="https://github.com/joker666" class="icon fa fa-github fa-2x"></a>
+    </footer>
 </div>

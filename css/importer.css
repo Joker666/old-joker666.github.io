@@ -98,11 +98,11 @@ body {
       border-bottom: solid 0em #ffffff;
       border-left: solid 0.5em transparent;
       border-right: solid 0.5em transparent;
-      -moz-transition: border-bottom-width .25s ease-in-out;
-      -webkit-transition: border-bottom-width .25s ease-in-out;
-      -o-transition: border-bottom-width .25s ease-in-out;
-      -ms-transition: border-bottom-width .25s ease-in-out;
-      transition: border-bottom-width .25s ease-in-out; }
+      -moz-transition: border-bottom-width .6s ease-in-out;
+      -webkit-transition: border-bottom-width .6s ease-in-out;
+      -o-transition: border-bottom-width .6s ease-in-out;
+      -ms-transition: border-bottom-width .6s ease-in-out;
+      transition: border-bottom-width .6s ease-in-out; }
   #nav .active {
     opacity: 1; }
     #nav .active:after {
@@ -116,10 +116,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  height: 40%;
   -webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   -moz-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
-  box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38); }
+  box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
+  height: 40%; }
   #home:after {
     content: " ";
     display: block;
@@ -158,6 +158,30 @@ body {
   .my-image img {
     height: inherit; }
 
+/*================ Work Page ================ */
+#work {
+  margin-top: 1%;
+  background: white;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
+  box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38); }
+  #work:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #work div {
+    padding-top: 1px;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+    text-justify: inter-word; }
+    #work div h1 {
+      text-align: center; }
+
 /*================ BlogList Page ================ */
 #blogList {
   margin-top: 1%;
@@ -169,7 +193,7 @@ body {
   -webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   -moz-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
-  margin-bottom: 2em; }
+  padding-top: 1em; }
   #blogList:after {
     content: " ";
     display: block;
@@ -187,7 +211,7 @@ body {
       padding-right: 0.41667%;
       background: lightgray;
       border-radius: 20px;
-      margin-left: 0.5em;
+      margin-left: 1em;
       margin-top: 0.5em; }
       #blogList .blog-in-short .blog-in-short-time h1 {
         font-size: 5em;
@@ -196,7 +220,7 @@ body {
       #blogList .blog-in-short .blog-in-short-time span {
         font-size: 0.5em; }
     #blogList .blog-in-short .blog-in-short-body {
-      margin-left: 1.5em;
+      margin-left: 1em;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -207,5 +231,28 @@ body {
       #blogList .blog-in-short .blog-in-short-body h1 {
         margin-top: 0;
         margin-bottom: 0; }
+
+/*================ Footer ================ */
+footer {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  footer a {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    opacity: 0.5;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out; }
+    footer a:hover {
+      opacity: 1; }
+  footer #twitter:hover {
+    color: deepskyblue; }
+  footer #plus:hover {
+    color: orangered; }
+  footer #github:hover {
+    color: #000000; }
 
 /*# sourceMappingURL=importer.css.map */

@@ -1,5 +1,5 @@
 app.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("home");
     $stateProvider
         .state('nav', {
             url: '/',
@@ -9,6 +9,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('nav.home', {
             url: 'home',
             templateUrl: 'templates/home.html'
+        })
+        .state('nav.work', {
+            url: 'work',
+            templateUrl: 'templates/work.html'
         })
         .state('nav.blogList', {
             url: 'blog',

@@ -1,2 +1,1 @@
-var app = angular.module('blogApp', ['ui.router']);
-
+var app = angular.module('blogApp', ['ui.router', 'ngAnimate']);

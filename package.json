@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Joker666/Joker666.github.io",
   "dependencies": {
-    "gulp": "^3.8.7",
+    "gulp": "^3.8.8",
     "gulp-ruby-sass": "^0.7.1"
   }
 }

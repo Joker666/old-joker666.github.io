@@ -89,6 +89,7 @@ body {
         border-width: 10px;
         margin-left: -10px; }
     #nav a:after {
+      z-index: 6;
       content: '';
       display: block;
       position: absolute;
@@ -143,6 +144,9 @@ body {
       opacity: 0.7;
       font-size: 1.2em;
       font-weight: 200; }
+    .front-info section .wrap {
+      font-size: 2.1em;
+      color: green; }
 
 .my-image {
   -moz-box-sizing: border-box;
@@ -180,6 +184,7 @@ body {
     text-align: justify;
     text-justify: inter-word; }
     #work div h1 {
+      opacity: 0.8;
       text-align: center; }
 
 /*================ BlogList Page ================ */

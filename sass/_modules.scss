@@ -122,15 +122,46 @@
 /*================ Work Page ================ */
 #work{
     @include page();
-    div{
+    div#skill{
         padding-top: 1px;
         margin-left: 1em;
         margin-right: 1em;
         text-align: justify;
         text-justify: inter-word;
+        section{
+            @include span(6);
+        }
+        #banner{
+            width: 100%;
+        }
+    }
+    div#works{
+        clear: both;
+        padding-top: 1px;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-bottom: 2em;
+        text-align: justify;
+        text-justify: inter-word;
         h1{
             opacity: 0.8;
             text-align: center;
+        }
+        section.work{
+            clear: both;
+            margin-top: 0.5em;
+            height: 6.5em;
+            img{
+                @include span(6);
+            }
+            p{
+                margin-left: 0.8em;
+                @include span(17);
+                margin-top: -5px;
+            }
+            a{
+                margin-left: 0.8em;
+            }
         }
     }
 }

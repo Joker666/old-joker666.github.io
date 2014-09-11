@@ -11,7 +11,12 @@ html {
   background-size: cover; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: deepskyblue; }
+
+.inline-grey {
+  background: gainsboro;
+  border-radius: 4px; }
 
 body {
   max-width: 100%;
@@ -177,15 +182,57 @@ body {
     content: " ";
     display: block;
     clear: both; }
-  #work div {
+  #work div#skill {
     padding-top: 1px;
     margin-left: 1em;
     margin-right: 1em;
     text-align: justify;
     text-justify: inter-word; }
-    #work div h1 {
+    #work div#skill section {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 25%;
+      float: left;
+      padding-left: 0.41667%;
+      padding-right: 0.41667%; }
+    #work div#skill #banner {
+      width: 100%; }
+  #work div#works {
+    clear: both;
+    padding-top: 1px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-bottom: 2em;
+    text-align: justify;
+    text-justify: inter-word; }
+    #work div#works h1 {
       opacity: 0.8;
       text-align: center; }
+    #work div#works section.work {
+      clear: both;
+      margin-top: 0.5em;
+      height: 6.5em; }
+      #work div#works section.work img {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+        padding-left: 0.41667%;
+        padding-right: 0.41667%; }
+      #work div#works section.work p {
+        margin-left: 0.8em;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 70.83333%;
+        float: left;
+        padding-left: 0.41667%;
+        padding-right: 0.41667%;
+        margin-top: -5px; }
+      #work div#works section.work a {
+        margin-left: 0.8em; }
 
 /*================ BlogList Page ================ */
 #blogList {

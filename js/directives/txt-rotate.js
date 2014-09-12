@@ -1,4 +1,4 @@
-app.directive('txtRotate', function($timeout, $compile){
+app.directive('txtRotate', function($timeout){
     return {
 
         link: function(scope, element, attrs){

@@ -5,18 +5,54 @@
 
 html {
   background: url(../images/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
 
 a {
   text-decoration: none;
-  color: deepskyblue; }
+  color: #198de6; }
 
 .inline-grey {
   background: gainsboro;
   border-radius: 4px; }
+
+.roll {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  -webkit-perspective: 400px;
+  -moz-perspective: 400px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%; }
+
+.roll span {
+  display: block;
+  position: relative;
+  padding: 5px 12px;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d; }
+
+.roll:hover span {
+  background: #111;
+  -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg); }
+
+.roll span:after {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px 12px;
+  color: #fff;
+  background: #0f558a;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg); }
 
 body {
   max-width: 100%;
@@ -30,7 +66,6 @@ body {
 .wrapper {
   margin-top: 5%;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 83.33333%;
   float: left;
@@ -53,11 +88,8 @@ body {
     opacity: 0.35;
     outline: 0;
     position: relative;
-    -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
-    -o-transition: opacity .25s ease-in-out;
-    -ms-transition: opacity .25s ease-in-out;
-    transition: opacity .25s ease-in-out; }
+            transition: opacity .25s ease-in-out; }
     #nav a:hover {
       opacity: 1.0; }
       #nav a:hover span {
@@ -75,11 +107,8 @@ body {
       background: #000000;
       color: wheat;
       opacity: 0;
-      -moz-transition: opacity .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out;
-      -o-transition: opacity .25s ease-in-out;
-      -ms-transition: opacity .25s ease-in-out;
-      transition: opacity .25s ease-in-out; }
+              transition: opacity .25s ease-in-out; }
       #nav a span:after {
         top: 100%;
         left: 50%;
@@ -104,11 +133,8 @@ body {
       border-bottom: solid 0em #ffffff;
       border-left: solid 0.5em transparent;
       border-right: solid 0.5em transparent;
-      -moz-transition: border-bottom-width .6s ease-in-out;
       -webkit-transition: border-bottom-width .6s ease-in-out;
-      -o-transition: border-bottom-width .6s ease-in-out;
-      -ms-transition: border-bottom-width .6s ease-in-out;
-      transition: border-bottom-width .6s ease-in-out; }
+              transition: border-bottom-width .6s ease-in-out; }
   #nav .active {
     opacity: 1; }
     #nav .active:after {
@@ -122,8 +148,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  -webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   height: 40%; }
   #home:after {
@@ -133,7 +157,6 @@ body {
 
 .front-info {
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 62.5%;
   float: left;
@@ -155,7 +178,6 @@ body {
 
 .my-image {
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 37.5%;
   float: left;
@@ -175,8 +197,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  -webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38); }
   #work:after {
     content: " ";
@@ -190,7 +210,6 @@ body {
     text-justify: inter-word; }
     #work div#skill section {
       -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       width: 25%;
       float: left;
@@ -215,16 +234,20 @@ body {
       height: 6.5em; }
       #work div#works section.work img {
         -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: 25%;
         float: left;
         padding-left: 0.41667%;
-        padding-right: 0.41667%; }
+        padding-right: 0.41667%;
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s; }
+        #work div#works section.work img:hover {
+          -webkit-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+                  transform: scale(1.2); }
       #work div#works section.work p {
         margin-left: 0.8em;
         -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: 70.83333%;
         float: left;
@@ -242,8 +265,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  -webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
   padding-top: 1em; }
   #blogList:after {
@@ -255,7 +276,6 @@ body {
     #blogList .blog-in-short .blog-in-short-time {
       text-align: center;
       -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       width: 16.66667%;
       float: left;
@@ -274,7 +294,6 @@ body {
     #blogList .blog-in-short .blog-in-short-body {
       margin-left: 1em;
       -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       width: 79.16667%;
       float: left;
@@ -293,11 +312,8 @@ footer {
     margin-left: 0.1em;
     margin-right: 0.1em;
     opacity: 0.5;
-    -moz-transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    -ms-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out; }
+            transition: all .25s ease-in-out; }
     footer a:hover {
       opacity: 1; }
   footer #twitter:hover {
@@ -306,5 +322,3 @@ footer {
     color: orangered; }
   footer #github:hover {
     color: #000000; }
-
-/*# sourceMappingURL=importer.css.map */

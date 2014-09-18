@@ -20,8 +20,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'BlogListCtrl'
         })
         .state('nav.blogList.blog', {
-            url: 'blog',
-            templateUrl: 'templates/blogList.html',
-            controller: 'BlogListCtrl'
+            url: '/:blogDate',
+            templateUrl: function ($stateParams){
+                return '/templates/blogs/' + $stateParams.blogDate + '.html';
+            },
+            controller: 'BlogCtrl'
+        })
+        .state('nav.write', {
+            url: 'write',
+            templateUrl: 'templates/write.html',
         });
 });

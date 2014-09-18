@@ -75,7 +75,7 @@
 /*================ Homepage ================ */
 #home{
     @include page();
-    height: 40%;
+    height: 20em;
 }
 
 .front-info{
@@ -101,7 +101,7 @@
 .my-image{
     @include span(9);
     overflow: hidden;
-    height: 55%;
+    height: 100%;
     margin-bottom: -0.39em;
     img{
         height: inherit;

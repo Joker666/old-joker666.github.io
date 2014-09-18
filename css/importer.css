@@ -149,7 +149,7 @@ body {
   margin-right: auto;
   position: relative;
   box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
-  height: 40%; }
+  height: 20em; }
   #home:after {
     content: " ";
     display: block;
@@ -184,7 +184,7 @@ body {
   padding-left: 0.41667%;
   padding-right: 0.41667%;
   overflow: hidden;
-  height: 55%;
+  height: 100%;
   margin-bottom: -0.39em; }
   .my-image img {
     height: inherit; }

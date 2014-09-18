@@ -1,1 +1,1 @@
-var app = angular.module('blogApp', ['ui.router', 'ngAnimate']);
+var app = angular.module('blogApp', ['ui.router', 'ngAnimate', 'ngResource', 'textAngular']);

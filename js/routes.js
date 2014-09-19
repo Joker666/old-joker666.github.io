@@ -29,5 +29,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('nav.write', {
             url: 'write',
             templateUrl: 'templates/write.html',
+            controller: 'WriteCtrl'
         });
 });

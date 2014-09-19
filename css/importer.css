@@ -303,6 +303,79 @@ body {
         margin-top: 0;
         margin-bottom: 0; }
 
+/*================ Write ================ */
+#write-blog {
+  margin-top: 1%;
+  background: white;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.38);
+  padding-top: 1em; }
+  #write-blog:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #write-blog h1 {
+    margin-top: 0;
+    margin-left: 3%;
+    display: inline-block;
+    margin-bottom: 0.3em; }
+  #write-blog a {
+    float: right;
+    margin-right: 1em; }
+  #write-blog div.btn-group {
+    display: inline-block; }
+  #write-blog .ta-editor.ta-html {
+    width: 99%; }
+  #write-blog text-angular div.ta-toolbar {
+    margin-left: 10px; }
+    #write-blog text-angular div.ta-toolbar .btn-group {
+      border: 1px solid grey;
+      border-radius: 5px;
+      margin-right: 3px; }
+    #write-blog text-angular div.ta-toolbar button {
+      background: transparent;
+      -webkit-transition: all .25s ease-in-out;
+              transition: all .25s ease-in-out;
+      opacity: 0.8;
+      border: none;
+      border-right: 1px solid lightgrey; }
+      #write-blog text-angular div.ta-toolbar button:hover {
+        background: #198de6;
+        color: #ffffff; }
+    #write-blog text-angular div.ta-toolbar .active {
+      background: #198de6;
+      color: #ffffff; }
+  #write-blog text-angular div.ta-scroll-window div.popover-content {
+    margin-left: 10px; }
+  #write-blog text-angular div.ta-scroll-window .btn-group {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 3px; }
+  #write-blog text-angular div.ta-scroll-window button {
+    background: transparent;
+    -webkit-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+    opacity: 0.8;
+    border: none;
+    border-right: 1px solid lightgrey; }
+    #write-blog text-angular div.ta-scroll-window button:hover {
+      background: #198de6;
+      color: #ffffff; }
+  #write-blog text-angular div.ta-scroll-window .active {
+    background: #198de6;
+    color: #ffffff; }
+  #write-blog text-angular div[contenteditable="true"] {
+    font-size: 0.8rem !important;
+    max-height: 450px; }
+    #write-blog text-angular div[contenteditable="true"] pre {
+      background: #ececec; }
+    #write-blog text-angular div[contenteditable="true"] p {
+      margin-top: 0;
+      margin-bottom: 0; }
+
 /*================ Footer ================ */
 footer {
   text-align: center;
